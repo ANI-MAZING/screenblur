@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Blur - Protect Your Secrets",
+  "version": "1.0",
+  "description": "Blur sensitive information on screen while recording tutorials",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "cursor.png",
+      "48": "cursor.png",
+      "128": "cursor.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "cursor.png",
+    "48": "cursor.png",
+    "128": "cursor.png"
+  }
+}

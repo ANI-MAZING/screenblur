@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #141414;
+      color: white;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 15px 0;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    #toggleBtn {
+      background: white;
+      color: #141414;
+    }
+    #toggleBtn:hover {
+      transform: scale(1.05);
+    }
+    #toggleBtn.active {
+      background: #ff4757;
+      color: white;
+    }
+    #clearBtn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+    #clearBtn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .status {
+      text-align: center;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+    .info {
+      font-size: 16px;
+      opacity: 0.9;
+      margin-top: 15px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Screen Blur</h1>
+  <div class="status" id="status">Click button to start</div>
+  <button id="toggleBtn">Start Blur Mode</button>
+  <button id="clearBtn">Clear All Blurs</button>
+  <div class="info">
+    Hover over any element and click to blur it. Perfect for hiding API keys, passwords, and sensitive data while recording!
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.blur-hover {
+  outline: 3px dashed #667eea !important;
+  outline-offset: 2px !important;
+  transition: all 0.2s ease !important;
+}
+
+.blur-active {
+  filter: blur(8px) !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+  user-select: none !important;
+  pointer-events: none !important;
+}
